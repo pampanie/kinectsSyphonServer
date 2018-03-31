@@ -55,6 +55,8 @@ public:
 	ofParameter<int>	k2GrayThreshFar;
 	
 
+	ofxSyphonServer		k1SyphonServer;
+	ofxSyphonServer		k2SyphonServer;
 	
 
 

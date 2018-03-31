@@ -6,6 +6,9 @@ void ofApp::setup(){
 	ofSetFrameRate(30);
 	ofSetVerticalSync(false);
 	
+	// init syphon servers
+	k1SyphonServer.setName("kinect1 output syphon");
+	k2SyphonServer.setName("kinect2 output syphon");
 	
 	// init kinect kinect2 .............................................
 	kinect1.setRegistration(true);
@@ -150,13 +153,21 @@ void ofApp::update(){
 		// update the cv images
 		k2GrayImage.flagImageChanged();
 	}
+
+	
+	
+	k1SyphonServer.publishTexture(&k1GrayImage.getTexture());
+	k2SyphonServer.publishTexture(&k2GrayImage.getTexture());
+	
+	
 	
 }
 
+
 //--------------------------------------------------------------
 void ofApp::draw(){
-	k1GrayImage.draw(0,0);
-	k2GrayImage.draw(650,0);
+	k1GrayImage.draw(650,0);
+	k2GrayImage.draw(0,0);
 	gui.draw();
 }
 
