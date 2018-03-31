@@ -3,9 +3,9 @@
 	<kinect1_near>73</kinect1_near>
 	<kinect1_far>1</kinect1_far>
 	<kinect1_angle>13</kinect1_angle>
-	<kinect2_near>3763</kinect2_near>
-	<kinect2_far>1929</kinect2_far>
-	<kinect2_gray_near>255</kinect2_gray_near>
-	<kinect2_gray_far>60</kinect2_gray_far>
+	<kinect2_near>5050</kinect2_near>
+	<kinect2_far>808</kinect2_far>
+	<kinect2_gray_near>178</kinect2_gray_near>
+	<kinect2_gray_far>74</kinect2_gray_far>
 <group/>
 </group>
